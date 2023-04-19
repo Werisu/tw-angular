@@ -10,7 +10,7 @@
 		<!-- form -->
 		<div class="flex-1">
 			<!-- textarea -->
-			<textarea [maxLength]="tweetMaxLegth" [(ngModel)]="tweetMessage" (input)="changeTweet()"
+			<textarea [maxLength]="tweetMaxLegth" [(ngModel)]="tweetMessage" (input)="changeTweet()" (keyup.enter)="sendTweet()"
 				class="mb-2 bg-gray-200 focus:outline-none focus:shadow-outline focus:bg-gray-100 border border-transparent rounded-lg py-2 px-4 block w-full appearance-none leading-normal font-light resize-none placeholder-gray-700"
 				placeholder="What's happening ..." rows="3"></textarea>
 
