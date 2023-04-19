@@ -1,0 +1,14 @@
+{
+  "/api": {
+    "target": "https://api.twitter.com",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": "/2"
+    },
+    "headers": {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "Content-Type"
+    }
+  }
+}
