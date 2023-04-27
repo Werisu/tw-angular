@@ -15,6 +15,7 @@ import { MessagesService } from "./services/messages.service";
 import { HttpClientModule } from '@angular/common/http';
 import { SidebarLeftComponent } from './components/sidebar-left/sidebar-left.component';
 import { SidebarRightComponent } from './components/sidebar-right/sidebar-right.component';
+import { WhatIsHappeningComponent } from './components/sidebar-right/what-is-happening/what-is-happening.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SidebarRightComponent } from './components/sidebar-right/sidebar-right.
     HomeComponent,
     NewPostComponent,
     SidebarLeftComponent,
-    SidebarRightComponent
+    SidebarRightComponent,
+    WhatIsHappeningComponent
   ],
   imports: [
     BrowserModule,
