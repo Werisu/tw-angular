@@ -19,15 +19,7 @@ export class HomeComponent implements OnInit {
 	}
 
 	getMessages(){
-		this.messagesService.getMessages().subscribe({
-			next: res => {
-				this.tweets = res
-			},
-			error: erro => {
-				this.apiError = true;
-				this.error = erro;
-			}
-		});
+		this.tweets = this.messagesService.getMessages();
 	}
 
 }
