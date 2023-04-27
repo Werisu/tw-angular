@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 
 import { MessagesService } from "./services/messages.service";
 import { HttpClientModule } from '@angular/common/http';
+import { SidebarLeftComponent } from './components/sidebar-left/sidebar-left.component';
+import { SidebarRightComponent } from './components/sidebar-right/sidebar-right.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
     PostComponent,
     TweetComponent,
     HomeComponent,
-    NewPostComponent
+    NewPostComponent,
+    SidebarLeftComponent,
+    SidebarRightComponent
   ],
   imports: [
     BrowserModule,

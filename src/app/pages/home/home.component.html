@@ -5,12 +5,20 @@
 	</div>
 </header>
 
-<div class="flex items-center justify-center mx-auto">
-	<tw-new-post></tw-new-post>
-</div>
+<div class="container m-auto flex justify-between">
+	<tw-sidebar-left></tw-sidebar-left>
 
-<div class="flex flex-col items-center justify-center mx-auto">
-	<tw-tweet *ngFor="let tweetMessage of tweets" [tweetMessage]="tweetMessage"></tw-tweet>
+	<div class="tw-center">
+		<div class="flex justify-center mx-auto">
+			<tw-new-post></tw-new-post>
+		</div>
+
+		<div class="flex flex-col items-center justify-center mx-auto">
+			<tw-tweet *ngFor="let tweetMessage of tweets" [tweetMessage]="tweetMessage"></tw-tweet>
+		</div>
+	</div>
+
+	<tw-sidebar-right></tw-sidebar-right>
 </div>
 
 <div>
